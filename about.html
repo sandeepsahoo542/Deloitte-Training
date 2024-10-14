@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products</title>
+  <title>About Us</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <style>
     body {
@@ -21,70 +21,64 @@
 
     .container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem;
     }
 
-    .product {
+    .content {
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin: 1rem;
-      width: 300px;
+      padding: 2rem;
+      max-width: 800px;
       text-align: center;
-      padding: 1rem;
     }
 
-    .product img {
-      max-width: 100%;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 1rem;
-    }
-
-    .product h2 {
+    h1 {
       color: #333;
-      font-size: 1.5rem;
-      margin: 1rem 0;
+      font-size: 2rem;
     }
 
-    .product p {
+    p {
       color: #666;
       font-size: 1rem;
     }
 
-    .product button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      cursor: pointer;
+    .owner {
+      margin-top: 2rem;
     }
 
-    .product button:hover {
-      background-color: #555;
+    .owner h2 {
+      color: #333;
+      font-size: 1.5rem;
+    }
+
+    .owner p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .owner p a {
+      color: #333;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Our Products</h1>
+    <h1>About Us</h1>
   </header>
   <div class="container">
-    <div class="product">
-      <img src="product1.jpg" alt="Product 1">
-      <h2>Product 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-      <button>Buy Now</button>
+    <div class="content">
+      <h1>Welcome to Our Company</h1>
+      <p>We are dedicated to providing the best services and products to our customers. Our team is passionate about innovation and excellence.</p>
+      <div class="owner">
+        <h2>Our Founder</h2>
+        <p>Sandeep Sahoo</p>
+        <p>Contact: <a href="mailto:sandeepsahoo542@gmail.com">sandeepsahoo542@gmail.com</a></p>
+      </div>
     </div>
-    <div class="product">
-      <img src="product2.jpg" alt="Product 2">
-      <h2>Product 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-      <button>Buy Now</button>
-    </div>
-    <!-- Add more products as needed -->
   </div>
 </body>
 </html>
